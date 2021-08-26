@@ -1,0 +1,25 @@
+textarea, input {
+    background-color: #dee2e6 !important;
+}
+
+.nav-link.active {
+    background-color: #dee2e6 !important;
+}
+
+/* 
+    Fang/DeFang Radio Buttons 
+    Changing color of the circle inside
+    checked radio buttons: fill='%230d6efd'
+*/
+.form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%230d6efd'/%3e%3c/svg%3e");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    padding-bottom: 120px;
+}
