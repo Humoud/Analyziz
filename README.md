@@ -6,8 +6,8 @@ A web app inspired by [CyberChef](https://github.com/gchq/CyberChef) which aims 
 If you answer yes to one or more of the below then this tool is suitable for you:
 
 - Hate defanging/refanging 🦷 urls and domains by hand? ✅
-    - Does looking up the domain on Urlscan, DomainTools, Google sounds good? ✅
-- Want to calculate hashes of samples then look them up on VT *without submitting the sample there*? ✅
+    - Does looking up the domain on Urlscan, DomainTools, Google sound good? ✅
+- Calculate hashes of samples then look them up on VT *without submitting the sample there*? ✅
 - How about getting everything you are working on in plain text? ✅
 - Does achieving the above via a web browser sound convenient? ✅
 
@@ -59,6 +59,7 @@ chmod +x prod_build.sh
 # Now the build can be found at prod/dist.zip
 ```
 
+
 # Credits
 
 - Inspired me to make the tool: https://github.com/gchq/CyberChef
@@ -67,3 +68,7 @@ chmod +x prod_build.sh
 - http://urlscan.io/
 - https://www.virustotal.com/
 - https://www.domaintools.com/
+
+
+# Contribution
+Contributions are welcomed. Whether you wish to introduce a new feature, fix bugs, or make general improvements. Make a pull request or open an issue and we'll discuss it.
