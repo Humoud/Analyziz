@@ -201,6 +201,9 @@ ready(() => {
         const vt_md5 = document.getElementById('vt-md5');
         const vt_sha1 = document.getElementById('vt-sha1');
         const vt_sha256 = document.getElementById('vt-sha256');
+        const bazaar_md5 = document.getElementById('bazaar-md5');
+        const bazaar_sha1 = document.getElementById('bazaar-sha1');
+        const bazaar_sha256 = document.getElementById('bazaar-sha256');
         const hashWorker = new Worker("js/hashworker.min.js");
         hashWorker.onmessage = function(e) {
             sample.md5 = e.data.md5;
@@ -213,6 +216,9 @@ ready(() => {
             vt_md5.setAttribute('href', `https://www.virustotal.com/gui/file/${sample.md5}/detection`);
             vt_sha1.setAttribute('href', `https://www.virustotal.com/gui/file/${sample.sha1}/detection`);
             vt_sha256.setAttribute('href', `https://www.virustotal.com/gui/file/${sample.sha256}/detection`);
+            bazaar_md5.setAttribute('href', `https://bazaar.abuse.ch/browse.php?search=md5:${hash_md5.value}`);
+            bazaar_sha1.setAttribute('href', `https://bazaar.abuse.ch/browse.php?search=sha1:${hash_sha1.value}`);
+            bazaar_sha256.setAttribute('href', `https://bazaar.abuse.ch/browse.php?search=sha256:${hash_sha256.value}`);
         }
         // Handle sample upload
         document.getElementById('sample').addEventListener('change' , function(e){
