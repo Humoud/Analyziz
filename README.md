@@ -3,29 +3,38 @@ https://analyziz.online
 
 A web app inspired by [CyberChef](https://github.com/gchq/CyberChef) which aims to make the work of infosec analysts easier.
 
-If you answer yes to one or more of the below then this tool is suitable for you:
+It is a workbench, as a friend called it, for initial analysis of malicious domains, urls, and malware samples.
 
 - Hate defanging/refanging 🦷 urls and domains by hand? ✅
-    - Does looking up the domain on Urlscan, DomainTools, Google sound good? ✅
-- Calculate hashes of samples then look them up on VT *without submitting the sample there*? ✅
-- How about getting everything you are working on in plain text? ✅
+    - Want to look up the domains on:
+        - Urlscan
+        - DomainTools
+        - Google
+        - VirusTotal
+- Calculate hashes of samples then look them up on: ✅
+    - Malware Bazaar
+    - VirusTotal
+- Want to get everything you are working on in plain text? ✅
 - Does achieving the above via a web browser sound convenient? ✅
 
-
+-----
 
 Features:
-- Calculate MD5, SHA1, SHA256 hashes for files.
+- Calculate MD5, SHA1, SHA256 hashes of files.
     - Lookup hashes on [VirusTotal](https://www.virustotal.com/)
+    - Lookup hashes on [Malware Bazaar](https://bazaar.abuse.ch/)
 - Defang and Refang URLs.
     - Lookup domains on:
         - [Urlscan.io](http://urlscan.io/)
         - Whois via [DomainTools](https://www.domaintools.com/)
+        - Domain lookup on [VirusTotal](https://www.virustotal.com/)
         - Google search (using site operator) [Google](https://google.com)
 - Present the hashes, defanged/refanged domains, and urls in text format for easy copy/pasta.
+- All the above is done through the browser
 
 -----
 
-**Note:** The tool only does look ups when using VirusTotal and Urlscan. <u>No submissions are made and no data is collected by the tool.</u>
+**Note:** The tool only does look ups. <u>No samples or Url submissions are made and no data is collected by the tool.</u>
 
 -----
 
