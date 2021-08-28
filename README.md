@@ -9,8 +9,10 @@ It is a workbench, as a friend called it, for initial analysis of malicious doma
     - Want to look up the domains on:
         - Urlscan
         - DomainTools
-        - Google
+        - Google (using site operator)
+        - Google Safe Browsing
         - VirusTotal
+        - URLhaus
 - Calculate hashes of samples then look them up on: ✅
     - Malware Bazaar
     - VirusTotal
@@ -24,11 +26,13 @@ Features:
     - Lookup hashes on [VirusTotal](https://www.virustotal.com/)
     - Lookup hashes on [Malware Bazaar](https://bazaar.abuse.ch/)
 - Defang and Refang URLs.
-    - Lookup domains on:
+    - Extract and lookup domains on:
         - [Urlscan.io](http://urlscan.io/)
         - Whois via [DomainTools](https://www.domaintools.com/)
         - Domain lookup on [VirusTotal](https://www.virustotal.com/)
         - Google search (using site operator) [Google](https://google.com)
+        - [Google Safe Browsing](https://transparencyreport.google.com/safe-browsing/overview)
+        - [URLhause](https://urlhaus.abuse.ch/)
 - Present the hashes, defanged/refanged domains, and urls in text format for easy copy/pasta.
 - All the above is done through the browser
 

@@ -137,10 +137,8 @@ function handleHashFieldsClick(e) {
         copyTextToClipboard(e.target.value);
     } else if(e.target.tagName === 'I') {
         e.target.parentNode.parentNode.childNodes.forEach(function (elem){
-            if (elem.attributes){
-                if(elem.attributes.type && elem.attributes.type.value==='text'){
-                    copyTextToClipboard(elem.value);
-                }
+            if (elem.tagName === "INPUT"){
+                copyTextToClipboard(elem.value);
         }
         });
     } else if(e.target.tagName === 'SPAN'){

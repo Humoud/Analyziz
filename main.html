@@ -13,11 +13,7 @@
     <meta property="og:description" content="A web app inspired by CyberChef which aims to make the work of infosec analysts easier." /> 
     <meta name="description" content="A web app inspired by CyberChef which aims to make the work of infosec analysts easier." />
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -77,7 +73,7 @@
                             <div class="input-group">
                                 <input type="text" class="form-control form-control-sm" id="hash-md5"
                                     placeholder="Auto-Generated" readonly>
-                                <span class="input-group-text" id="hash-md5-span"><i class="bi bi-clipboard"></i></span>
+                                <span class="input-group-text" id="hash-md5-span"><i class="bi bi-clipboard" id="hash-md5-clipboard"></i></span>
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -96,7 +92,7 @@
                                 <input type="text" class="form-control form-control-sm" id="hash-sha1"
                                     placeholder="Auto-Generated" readonly>
                                 <span class="input-group-text" id="hash-sha1-span"><i
-                                        class="bi bi-clipboard"></i></span>
+                                        class="bi bi-clipboard" id="hash-sha1-clipboard"></i></span>
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -115,7 +111,7 @@
                                 <input type="text" class="form-control form-control-sm" id="hash-sha256"
                                     placeholder="Auto-Generated" readonly>
                                 <span class="input-group-text" id="hash-sha256-span"><i
-                                        class="bi bi-clipboard"></i></span>
+                                        class="bi bi-clipboard" id="hash-sha256-i"></i></span>
                             </div>
                         </div>
                         <div class="col-sm-2">
@@ -189,10 +185,7 @@
     </footer>
 
     <!-- JS CODE -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="js/switch.min.js"></script> <!-- Dark/Light Mode https://github.com/han109k/light-switch-bootstrap -->
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
