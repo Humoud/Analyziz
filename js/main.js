@@ -73,6 +73,8 @@ function addRow(text) {
             const aGoogle = document.createElement('a');
             const aDomainTools = document.createElement('a');
             const aVT = document.createElement('a');
+            const aSafeBrowsing = document.createElement('a');
+            const aURLHause = document.createElement('a');
             // In case current url/domain was defanged
             const r = refang(text);
             aUrlscan.setAttribute('href', `https://urlscan.io/search/#domain%3A${extractHostname(r)}`);
@@ -95,12 +97,25 @@ function addRow(text) {
             aVT.setAttribute('target', '_blank');
             aVT.setAttribute('rel', 'noopener noreferrer');
             aVT.innerHTML = 'VT';
+            aSafeBrowsing.setAttribute('href', `https://transparencyreport.google.com/safe-browsing/search?url=${extractHostname(r)}`);
+            aSafeBrowsing.setAttribute('class', 'btn btn-success btn-sm m-1');
+            aSafeBrowsing.setAttribute('target', '_blank');
+            aSafeBrowsing.setAttribute('rel', 'noopener noreferrer');
+            aSafeBrowsing.innerHTML = 'SafeBrowsing';
+            aURLHause.setAttribute('href', `https://urlhaus.abuse.ch/browse.php?search=${extractHostname(r)}`);
+            aURLHause.setAttribute('class', 'btn btn-secondary btn-sm m-1');
+            aURLHause.setAttribute('target', '_blank');
+            aURLHause.setAttribute('rel', 'noopener noreferrer');
+            aURLHause.innerHTML = 'URLHause';
+
 
             // td.setAttribute('style', 'width:20%')
             td.appendChild(aUrlscan);
             td.appendChild(aGoogle);
             td.appendChild(aDomainTools);
             td.appendChild(aVT);
+            td.appendChild(aSafeBrowsing);
+            td.appendChild(aURLHause);
         }
     }
 }
