@@ -72,6 +72,7 @@ function addRow(text) {
             const aUrlscan = document.createElement('a');
             const aGoogle = document.createElement('a');
             const aDomainTools = document.createElement('a');
+            const aVT = document.createElement('a');
             // In case current url/domain was defanged
             const r = refang(text);
             aUrlscan.setAttribute('href', `https://urlscan.io/search/#domain%3A${extractHostname(r)}`);
@@ -80,19 +81,26 @@ function addRow(text) {
             aUrlscan.setAttribute('rel', 'noopener noreferrer');
             aUrlscan.innerHTML = 'Urlscan';
             aGoogle.setAttribute('href', `https://google.com/search?q=site%3A${extractHostname(r)}`);
-            aGoogle.setAttribute('class', 'btn btn-info btn-sm m-1');
+            aGoogle.setAttribute('class', 'btn btn-success btn-sm m-1');
             aGoogle.setAttribute('target', '_blank');
             aGoogle.setAttribute('rel', 'noopener noreferrer');
             aGoogle.innerHTML = 'Google';
             aDomainTools.setAttribute('href', `https://whois.domaintools.com/${extractHostname(r)}`);
-            aDomainTools.setAttribute('class', 'btn btn-secondary btn-sm');
+            aDomainTools.setAttribute('class', 'btn btn-secondary btn-sm m-1');
             aDomainTools.setAttribute('target', '_blank');
             aDomainTools.setAttribute('rel', 'noopener noreferrer');
             aDomainTools.innerHTML = 'Domain Tools';
+            aVT.setAttribute('href', `https://www.virustotal.com/gui/domain/${extractHostname(r)}`);
+            aVT.setAttribute('class', 'btn btn-info btn-sm');
+            aVT.setAttribute('target', '_blank');
+            aVT.setAttribute('rel', 'noopener noreferrer');
+            aVT.innerHTML = 'VT';
+
             // td.setAttribute('style', 'width:20%')
             td.appendChild(aUrlscan);
             td.appendChild(aGoogle);
             td.appendChild(aDomainTools);
+            td.appendChild(aVT);
         }
     }
 }
