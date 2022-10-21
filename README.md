@@ -1,5 +1,4 @@
 # Analyziz 🔬
-https://analyziz.online
 
 A web app inspired by [CyberChef](https://github.com/gchq/CyberChef) which aims to make the work of infosec analysts easier.
 
@@ -43,9 +42,8 @@ Features:
 -----
 
 # Usage
-Visit: https://analyziz.online
 
-Or download the code from the releases and put it on a local web server.
+Download the code from the releases and put it on a local web server.
 
 # Installing (optional)
 ## Dependencies
